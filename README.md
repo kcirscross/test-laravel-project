@@ -19,6 +19,7 @@
 - **[XAMPP](https://www.apachefriends.org/download.html)**
 
 ## How to install
+
 ### 1. Clone the repository
 Find a location on your computer where you want to store the project.
 Open CMD and clone the project.
@@ -60,11 +61,17 @@ Once you do migrate your database. This will create data in your database.
 
 `
 php artisan db:seed
+
 php artisan db:seed --class=ContactSeeder
+
 php artisan db:seed --class=ListSeeder
+
 php artisan db:seed --class=OpportunitySeeder
+
 php artisan db:seed --class=TagSeeder
+
 php artisan db:seed --class=TaskSeeder
+
 `
 
 ## Local development server
