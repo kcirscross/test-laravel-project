@@ -12,8 +12,9 @@
 - **[XAMPP](https://www.apachefriends.org/download.html)**
 
 ## How to install
-### php.ini file
+### File php.ini
 Make sure that your php.ini file has uncommented for 
+
 `extension=openssl`<br>
 `extension=pdo_mysql`<br>
 `extension=mysqli`<br>
@@ -22,43 +23,46 @@ Make sure that your php.ini file has uncommented for
 `extension=curl`<br>
 `extension=zip`<br>
 
-### 1. Clone the repository
+### 1. Open XAMPP
+Start Apache and MySQL
+
+### 2. Clone the repository
 Find a location on your computer where you want to store the project.
 Open CMD and clone the project.
 
 `git clone https://github.com/kcirscross/test-laravel-project`
 
-### 2. CD into the project
+### 3. CD into the project
 You will need to be inside the project directory that was just created, so cd into it.
 
 `cd project_name`
 
-### 3. Install composer dependencies
+### 4. Install composer dependencies
 Whenever you clone a new Laravel project you must now install all of the project dependencies. This is what actually installs Laravel itself, among other necessary packages to get started.
 
 `composer install`
 
-### 4. Copy the .env file
+### 5. Copy the .env file
 .env files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project requires.
 So you should make a copy of the .env.example file and name it .env so that you can setup your local deployment configuration in the next few steps.
 
 `cp .env.example .env`
 
-### 5. Generate an app encryption key
+### 6. Generate an app encryption key
 Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
 Laravel’s command line tools thankfully make it easy to generate this. Run this command in the terminal to generate that key.
 
 `php artisan key:generate`
 
-### 6. Create an empty database for the application
+### 7. Create an empty database for the application
 Create an testproject database for project using the database tools([phpmyadmin](http://localhost/phpmyadmin/)).
 
-### 7. Migrate the database
+### 8. Migrate the database
 Once your credentials are in the .env file, now you can migrate your database. This will create all the necessary tables in your database.
 
 `php artisan migrate`
 
-### 8. Seed the database
+### 9. Seed the database
 Once you do migrate your database. This will create data in your database.
 
 `php artisan db:seed`<br>
