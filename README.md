@@ -1,5 +1,5 @@
 <p align="center"><a target="_blank"><img src="https://cdn-new.topcv.vn/unsafe/140x/https://static.topcv.vn/company_logos/cong-ty-tnhh-mtv-jho-tech-5ec916c8661e3.jpg" width="140px" height="140px" alt="Logo"></a></p>
-<p align="center"><a href="https://ibb.co/2M4sn0v"><img src="https://i.ibb.co/kDC9HV4/require.png" alt="require" border="0"></a></p>
+<p align="center"><a><img src="https://i.ibb.co/kDC9HV4/require.png" alt="require" border="0"></a></p>
 
 ## Postman Documentation
 
