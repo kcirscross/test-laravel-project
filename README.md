@@ -1,12 +1,5 @@
 <p align="center"><a target="_blank"><img src="https://cdn-new.topcv.vn/unsafe/140x/https://static.topcv.vn/company_logos/cong-ty-tnhh-mtv-jho-tech-5ec916c8661e3.jpg" width="140px" height="140px" alt="Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
 ## Postman Documentation
 
 - [Postman](https://documenter.getpostman.com/view/24644260/2sAYBPktic)
@@ -19,6 +12,15 @@
 - **[XAMPP](https://www.apachefriends.org/download.html)**
 
 ## How to install
+### php.ini file
+Make sure that your php.ini file has uncommented for 
+`extension=openssl`<br>
+`extension=pdo_mysql`<br>
+`extension=mysqli`<br>
+`extension=mbstring`<br>
+`extension=fileinfo`<br>
+`extension=curl`<br>
+`extension=zip`<br>
 
 ### 1. Clone the repository
 Find a location on your computer where you want to store the project.
@@ -59,20 +61,12 @@ Once your credentials are in the .env file, now you can migrate your database. T
 ### 8. Seed the database
 Once you do migrate your database. This will create data in your database.
 
-`
-php artisan db:seed
-
-php artisan db:seed --class=ContactSeeder
-
-php artisan db:seed --class=ListSeeder
-
-php artisan db:seed --class=OpportunitySeeder
-
-php artisan db:seed --class=TagSeeder
-
-php artisan db:seed --class=TaskSeeder
-
-`
+`php artisan db:seed`<br>
+`php artisan db:seed --class=ContactSeeder`<br>
+`php artisan db:seed --class=ListSeeder`<br>
+`php artisan db:seed --class=OpportunitySeeder`<br>
+`php artisan db:seed --class=TagSeeder`<br>
+`php artisan db:seed --class=TaskSeeder`
 
 ## Local development server
 To run a local development server you may run the following command. This will start a development server at **http://localhost:8000**.
